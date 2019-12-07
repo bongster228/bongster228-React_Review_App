@@ -15,14 +15,14 @@ class SearchBar extends Component {
 
     render() {
         return (
-            <div className="ui segment ui container" style={{ top: "15px" }}>
+            <div className="ui segment">
                 <form className="ui form" onSubmit={this.onFormSubmit} >
                     <div className="field">
                         <label>Video Search</label>
                         <input type="text" name="video-search" placeholder="Search" value={this.state.term} onChange={this.handleInputChange} />
                     </div>
                 </form>
-            </div>
+            </div >
         )
     }
 }
